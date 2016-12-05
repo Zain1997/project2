@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Amazigh Quiz</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_activity_level">activity_level</string>
+    <string name="title_activity_activity_about">activity_about</string>
+    <string name="title_activity_intro">Amazigh Quiz</string>
+    <string name="title_activity_quiz_screen">QuizScreen</string>
+    <string name="title_activity_score_screen">ScoreScreen</string>
+    <string name="title_activity_practice">Practice</string>
+    <string name="title_activity_category">Category</string>
+    <string name="title_activity_leaderboard_screen">LeaderboardScreen</string>
+</resources>

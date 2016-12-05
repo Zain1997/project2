@@ -1,0 +1,211 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" tools:context=".About"
+        android:background="@drawable/_general_background"
+        android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/_general_header"
+            android:elevation="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:id="@+id/header"
+                android:textSize="30sp"
+                android:padding="3dp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:elevation="2dp"
+                    android:background="@drawable/_general_button_top">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:text=""
+                        android:textColor="#000"
+                        android:id="@+id/heading1"
+                        android:textSize="30sp"
+                        android:padding="3dp"
+                        android:gravity="center" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#FFF"
+                    android:id="@+id/text1"
+                    android:textSize="18sp"
+                    android:padding="8dp"
+                    android:gravity="center" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:elevation="2dp"
+                    android:background="@drawable/_general_button_center">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:text=""
+                        android:textColor="#000"
+                        android:id="@+id/heading2"
+                        android:textSize="30sp"
+                        android:padding="3dp"
+                        android:gravity="center" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#FFF"
+                    android:id="@+id/text2"
+                    android:textSize="18sp"
+                    android:padding="8dp"
+                    android:gravity="center" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:elevation="2dp"
+                    android:background="@drawable/_general_button_center">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:text=""
+                        android:textColor="#000"
+                        android:id="@+id/heading3"
+                        android:textSize="30sp"
+                        android:padding="3dp"
+                        android:gravity="center" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#FFF"
+                    android:id="@+id/text3"
+                    android:textSize="18sp"
+                    android:padding="8dp"
+                    android:gravity="center" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:elevation="2dp"
+                    android:background="@drawable/_general_button_center">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:text=""
+                        android:textColor="#000"
+                        android:id="@+id/heading4"
+                        android:textSize="30sp"
+                        android:padding="3dp"
+                        android:gravity="center" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#FFF"
+                    android:id="@+id/text4"
+                    android:textSize="18sp"
+                    android:padding="8dp"
+                    android:gravity="center" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:elevation="2dp"
+                    android:background="@drawable/_general_button_center">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:text=""
+                        android:textColor="#000"
+                        android:id="@+id/heading5"
+                        android:textSize="30sp"
+                        android:padding="3dp"
+                        android:gravity="center" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="http://www.amazingamazigh.nl"
+                    android:textColor="#FFF"
+                    android:id="@+id/text5"
+                    android:textSize="18sp"
+                    android:padding="8dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#FFF"
+                    android:id="@+id/text6"
+                    android:textSize="18sp"
+                    android:padding="8dp"
+                    android:gravity="center" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:elevation="2dp"
+                    android:background="@drawable/_general_button_bottom">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:text=""
+                        android:textColor="#000"
+                        android:id="@+id/heading6"
+                        android:textSize="30sp"
+                        android:padding="3dp"
+                        android:gravity="center" />
+                </FrameLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,313 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" tools:context=".QuizScreen"
+        android:background="@drawable/_general_background"
+        android:clipToPadding="false">
+
+    <LinearLayout
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:orientation="vertical"
+               android:clipToPadding="false">
+
+               <LinearLayout
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/_general_header"
+                   android:orientation="horizontal">
+                   <TextView
+                       android:layout_width="0dip"
+                       android:layout_weight="0.22"
+                       android:layout_height="fill_parent"
+                       android:text="0"
+                       android:padding="3dp"
+                       android:textColor="#FFFFFF"
+                       android:id="@+id/textViewScore"
+                       android:textSize="30sp" />
+                   <TextView
+                       android:layout_width="0dip"
+                       android:layout_weight="0.2"
+                       android:layout_height="fill_parent"
+                       android:text=""
+                       android:textStyle="bold"
+                       android:gravity="left"
+                       android:padding="3dp"
+                       android:visibility="invisible"
+                       android:textColor="#FFFFFF"
+                       android:id="@+id/textAddScore"
+                       android:textSize="30sp" />
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_weight="0.3"
+                       android:gravity="right"
+                       android:layout_height="fill_parent"
+                       android:text=""
+                       android:textColor="#FFFFFF"
+                       android:padding="3dp"
+                       android:id="@+id/textQuestionsRemaining"
+                       android:textSize="30sp" />
+
+               </LinearLayout>
+
+               <FrameLayout
+                   android:orientation="vertical"
+                   android:layout_width="fill_parent"
+                   android:id="@+id/rootQuizLayout"
+                   android:layout_height="fill_parent"
+                   android:layout_margin="15dp">
+
+                   <LinearLayout
+                       android:layout_width="fill_parent"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/cardFront"
+                       android:orientation="vertical">
+
+                       <Button
+                           android:id="@+id/nameOfThingFront"
+                           android:text=""
+                           android:layout_width="fill_parent"
+                           android:visibility="invisible"
+                           android:layout_height="40dp"
+                           android:textSize="30sp"
+                           android:clickable="false"
+                           android:background="@drawable/_general_button_top"
+                           />
+
+                       <LinearLayout
+                           android:layout_width="fill_parent"
+                           android:layout_height="125dp"
+                           android:orientation="horizontal"
+                           android:layout_weight="1">
+
+                           <FrameLayout
+                               android:id="@+id/f0"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_weight="0.5">
+                               <Button
+                                   android:textSize="32dp"
+                                   android:layout_width="fill_parent"
+                                   android:layout_height="fill_parent"
+                                   android:clickable="true"
+                                   android:visibility="invisible"
+                                   android:id="@+id/a0"
+                                   android:onClick="checkAnswer" />
+                               <ImageView
+                                   android:layout_width="fill_parent"
+                                   android:layout_height="fill_parent"
+                                   android:id="@+id/w0"
+                                   android:visibility="invisible"
+                                   android:elevation="2dp"/>
+                           </FrameLayout>
+
+                           <FrameLayout
+                               android:id="@+id/f1"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_weight="0.5">
+                               <Button
+                                   android:textSize="32dp"
+                                   android:layout_width="fill_parent"
+                                   android:layout_height="fill_parent"
+                                   android:clickable="true"
+                                   android:visibility="invisible"
+                                   android:id="@+id/a1"
+                                   android:onClick="checkAnswer" />
+                               <ImageView
+                                   android:layout_width="fill_parent"
+                                   android:layout_height="fill_parent"
+                                   android:id="@+id/w1"
+                                   android:visibility="invisible"
+                                   android:elevation="2dp"/>
+                           </FrameLayout>
+
+                       </LinearLayout>
+
+
+                       <LinearLayout
+                           android:layout_width="fill_parent"
+                           android:layout_height="125dp"
+                           android:orientation="horizontal"
+                           android:layout_weight="1">
+
+                           <FrameLayout
+                               android:id="@+id/f2"
+                               android:layout_width="wrap_content"
+                               android:layout_height="fill_parent"
+                               android:layout_weight="0.5">
+                               <Button
+                                   android:textSize="32dp"
+                                   android:layout_width="fill_parent"
+                                   android:layout_height="fill_parent"
+                                   android:clickable="true"
+                                   android:visibility="invisible"
+                                   android:id="@+id/a2"
+                                   android:onClick="checkAnswer" />
+                               <ImageView
+                                   android:layout_width="fill_parent"
+                                   android:layout_height="fill_parent"
+                                   android:id="@+id/w2"
+                                   android:visibility="invisible"
+                                   android:elevation="2dp"/>
+                           </FrameLayout>
+
+                           <FrameLayout
+                               android:id="@+id/f3"
+                               android:layout_width="wrap_content"
+                               android:layout_height="fill_parent"
+                               android:layout_weight="0.5">
+                               <Button
+                                   android:textSize="32dp"
+                                   android:layout_width="fill_parent"
+                                   android:layout_height="fill_parent"
+                                   android:clickable="true"
+                                   android:visibility="invisible"
+                                   android:id="@+id/a3"
+                                   android:onClick="checkAnswer" />
+                               <ImageView
+                                   android:layout_width="fill_parent"
+                                   android:layout_height="fill_parent"
+                                   android:id="@+id/w3"
+                                   android:visibility="invisible"
+                                   android:elevation="2dp"/>
+                           </FrameLayout>
+
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="fill_parent"
+                           android:layout_height="125dp"
+                           android:orientation="horizontal"
+                           android:layout_weight="1">
+
+                           <FrameLayout
+                               android:id="@+id/f4"
+                               android:layout_width="wrap_content"
+                               android:layout_height="fill_parent"
+                               android:layout_weight="0.5">
+                               <Button
+                                   android:textSize="32dp"
+                                   android:layout_width="fill_parent"
+                                   android:layout_height="fill_parent"
+                                   android:clickable="true"
+                                   android:visibility="invisible"
+                                   android:id="@+id/a4"
+                                   android:onClick="checkAnswer" />
+                               <ImageView
+                                   android:layout_width="fill_parent"
+                                   android:layout_height="fill_parent"
+                                   android:id="@+id/w4"
+                                   android:visibility="invisible"
+                                   android:elevation="2dp"/>
+                           </FrameLayout>
+
+                           <FrameLayout
+                               android:id="@+id/f5"
+                               android:layout_width="wrap_content"
+                               android:layout_height="fill_parent"
+                               android:layout_weight="0.5">
+                               <Button
+                                   android:textSize="32dp"
+                                   android:layout_width="fill_parent"
+                                   android:layout_height="fill_parent"
+                                   android:clickable="true"
+                                   android:visibility="invisible"
+                                   android:id="@+id/a5"
+                                   android:onClick="checkAnswer" />
+                               <ImageView
+                                   android:layout_width="fill_parent"
+                                   android:layout_height="fill_parent"
+                                   android:id="@+id/w5"
+                                   android:visibility="invisible"
+                                   android:elevation="2dp"/>
+                           </FrameLayout>
+
+                       </LinearLayout>
+
+                       <Button
+                           android:layout_width="fill_parent"
+                           android:layout_height="75dp"
+                           android:background="@drawable/_general_button_bottom"
+                           android:textColor="#000"
+                           android:id="@+id/ButtonSoundFront"
+                           android:text=""
+                           android:textSize="30sp"
+                           android:drawableLeft="@drawable/_general_music_note_icon_24dp"
+                           android:drawableRight="@drawable/_general_music_note_icon_24dp"
+                           android:paddingLeft="25dp"
+                           android:paddingRight="25dp"
+                           android:visibility="invisible"
+                           android:clickable="true"
+                           android:layout_gravity="bottom"
+                           android:onClick="playSound"
+                           android:layout_weight="2" />
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="fill_parent"
+                       android:layout_height="wrap_content"
+                       android:minHeight="100dp"
+                       android:id="@+id/cardBack"
+                       android:orientation="vertical"
+                       android:visibility="invisible"
+                       android:baselineAligned="false">
+
+                       <Button
+                           android:id="@+id/nameOfThingBack"
+                           android:text=""
+                           android:layout_width="fill_parent"
+                           android:layout_height="80dp"
+                           android:layout_marginLeft="15dp"
+                           android:layout_marginRight="15dp"
+                           android:layout_marginTop="25dp"
+                           android:textSize="30sp"
+                           android:clickable="false"
+                           android:background="@drawable/_general_button_top"
+                           />
+
+                       <FrameLayout
+                           android:orientation="vertical"
+                           android:layout_width="fill_parent"
+                           android:layout_height="fill_parent"
+                           android:layout_marginLeft="15dp"
+                           android:layout_marginRight="15dp"
+                           android:layout_weight="0.5">
+
+                           <ImageView
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:id="@+id/iViewAnswer"
+                               android:visibility="visible"/>
+
+                       </FrameLayout>
+
+                       <Button
+                           android:layout_width="fill_parent"
+                           android:layout_height="80dp"
+                           android:background="@drawable/_general_button_bottom"
+                           android:textColor="#000"
+                           android:id="@+id/ButtonSoundBack"
+                           android:text=""
+                           android:textSize="30sp"
+                           android:layout_marginLeft="15dp"
+                           android:layout_marginRight="15dp"
+                           android:drawableLeft="@drawable/_general_music_note_icon_24dp"
+                           android:drawableRight="@drawable/_general_music_note_icon_24dp"
+                           android:paddingLeft="25dp"
+                           android:paddingRight="25dp"
+                           android:layout_marginBottom="25dp"
+                           android:clickable="false"
+                           android:layout_gravity="bottom" />
+
+                   </LinearLayout>
+
+                   </FrameLayout>
+
+           </LinearLayout>
+
+</RelativeLayout>
+
+
+

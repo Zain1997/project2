@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" tools:context=".Category"
+        android:background="@drawable/_general_background"
+        android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:background="@drawable/_general_header"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="Amazing Amazigh"
+                android:textColor="#FFFFFF"
+                android:id="@+id/textViewScore"
+                android:textSize="30sp"
+                android:padding="3dp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kies een categorie"
+                android:textColor="#000"
+                android:background="@drawable/_general_button_top"
+                android:id="@+id/chooseCategory"
+                android:elevation="5dp"
+                android:textSize="18sp"
+                android:singleLine="true"
+                android:padding="20dp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="85dp"
+                android:layout_height="fill_parent"
+                android:text="dieren 1"
+                android:id="@+id/c1"
+                android:tag="1"
+                android:elevation="5dp"
+                android:background="@drawable/_general_button_upper_left"
+                android:layout_margin="5dp"
+                android:onClick="toSubject"/>
+            <Button
+                android:layout_width="85dp"
+                android:layout_height="fill_parent"
+                android:elevation="5dp"
+                android:text="fruit"
+                android:id="@+id/c2"
+                android:tag="2"
+                android:background="@drawable/_general_button_center"
+                android:layout_margin="5dp"
+                android:onClick="toSubject"/>
+            <Button
+                android:layout_width="85dp"
+                android:layout_height="fill_parent"
+                android:text="insecten"
+                android:id="@+id/c3"
+                android:tag="3"
+                android:background="@drawable/_general_button_upper_right"
+                android:layout_margin="5dp"
+                android:onClick="toSubject"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="85dp"
+                android:layout_height="fill_parent"
+                android:text="groente"
+                android:id="@+id/c4"
+                android:tag="4"
+                android:background="@drawable/_general_button_center"
+                android:layout_margin="5dp"
+                android:onClick="toSubject"/>
+            <Button
+                android:layout_width="85dp"
+                android:layout_height="fill_parent"
+                android:text="dieren 2"
+                android:id="@+id/c5"
+                android:tag="5"
+                android:background="@drawable/_general_button_center"
+                android:layout_margin="5dp"
+                android:onClick="toSubject"/>
+            <Button
+                android:layout_width="85dp"
+                android:layout_height="fill_parent"
+                android:text="eten"
+                android:id="@+id/c6"
+                android:tag="6"
+                android:background="@drawable/_general_button_center"
+                android:layout_margin="5dp"
+                android:onClick="toSubject"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="85dp"
+                android:layout_height="fill_parent"
+                android:text="kleding"
+                android:id="@+id/c7"
+                android:tag="7"
+                android:background="@drawable/_general_button_bottom_left"
+                android:layout_margin="5dp"
+                android:onClick="toSubject"/>
+            <Button
+                android:layout_width="85dp"
+                android:layout_height="fill_parent"
+                android:text="kleuren"
+                android:id="@+id/c8"
+                android:tag="8"
+                android:background="@drawable/_general_button_center"
+                android:layout_margin="5dp"
+                android:onClick="toSubject"/>
+            <Button
+                android:layout_width="85dp"
+                android:layout_height="fill_parent"
+                android:text="weer"
+                android:id="@+id/c9"
+                android:tag="9"
+                android:background="@drawable/_general_button_bottom_right"
+                android:layout_margin="5dp"
+                android:onClick="toSubject"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="fill_parent"
+                android:text="expert"
+                android:id="@+id/c10"
+                android:tag="100"
+                android:layout_margin="8dp"
+                android:background="@drawable/_general_button_bottom"
+                android:onClick="toSubject"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

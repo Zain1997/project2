@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <translate
+        android:fromXDelta="0%" android:toXDelta="-5%"
+        android:fromYDelta="0%" android:toYDelta="0%"
+        android:duration="25" />
+    <translate
+        android:fromXDelta="-5%" android:toXDelta="5%"
+        android:fromYDelta="0%" android:toYDelta="0%"
+        android:startOffset="25"
+        android:duration="50" />
+    <translate
+        android:fromXDelta="5%" android:toXDelta="-5%"
+        android:fromYDelta="0%" android:toYDelta="0%"
+        android:startOffset="75"
+        android:duration="50" />
+    <translate
+        android:fromXDelta="-5%" android:toXDelta="5%"
+        android:fromYDelta="0%" android:toYDelta="0%"
+        android:startOffset="125"
+        android:duration="50" />
+    <translate
+        android:fromXDelta="5%" android:toXDelta="-5%"
+        android:fromYDelta="0%" android:toYDelta="0%"
+        android:startOffset="175"
+        android:duration="50" />
+    <translate
+        android:fromXDelta="-5%" android:toXDelta="5%"
+        android:fromYDelta="0%" android:toYDelta="0%"
+        android:startOffset="225"
+        android:duration="50" />
+    <translate
+        android:fromXDelta="5%" android:toXDelta="0%"
+        android:fromYDelta="0%" android:toYDelta="0%"
+        android:startOffset="275"
+        android:duration="25" />
+</set>

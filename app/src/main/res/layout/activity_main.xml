@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity"
+    android:background="@drawable/_general_background"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="Amazing Amazigh"
+                android:textColor="#FFFFFF"
+                android:elevation="5dp"
+                android:background="@drawable/_general_header"
+                android:id="@+id/textViewScore"
+                android:textSize="30sp"
+                android:padding="3dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Taal"
+                android:id="@+id/textTaal"
+                android:elevation="5dp"
+                android:padding="4dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/_general_button_top"
+                android:textColor="#000"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:gravity="center"
+                />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="65dp"
+                android:padding="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/_general_button_center"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="55dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="fill_parent"
+                    android:elevation="2dp"
+                    android:onClick="setDutch"
+                    android:background="@drawable/_general_flags_netherlands"/>
+                <Button
+                    android:layout_width="55dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="fill_parent"
+                    android:elevation="2dp"
+                    android:onClick="setGerman"
+                    android:background="@drawable/_general_flags_germany"/>
+                <Button
+                    android:layout_width="55dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="fill_parent"
+                    android:elevation="2dp"
+                    android:onClick="setFrench"
+                    android:background="@drawable/_general_flags_france"/>
+                <Button
+                    android:layout_width="55dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="fill_parent"
+                    android:elevation="2dp"
+                    android:onClick="setSpanish"
+                    android:background="@drawable/_general_flags_spain"/>
+                <Button
+                    android:layout_width="55dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="fill_parent"
+                    android:elevation="2dp"
+                    android:onClick="setEnglish"
+                    android:background="@drawable/_general_flags_uk"/>
+            </LinearLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:clipToPadding="false">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Oefen"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:id="@+id/btnOefen"
+            android:background="@drawable/_general_button_top"
+            android:onClick="selectPractice" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Speel"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:clickable="true"
+            android:id="@+id/btnSpeel"
+            android:onClick="selectSingle"
+            android:background="@drawable/_general_button_center"
+            android:elevation="5dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Scores"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:clickable="true"
+            android:id="@+id/btnScores"
+            android:onClick="selectLeaderboard"
+            android:background="@drawable/_general_button_center"
+            android:elevation="5dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Over"
+            android:clickable="true"
+            android:id="@+id/btnOver"
+            android:onClick="selectAbout"
+            android:background="@drawable/_general_button_bottom"
+            android:elevation="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

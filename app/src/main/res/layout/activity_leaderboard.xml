@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" tools:context=".ScoreScreen"
+        android:background="@drawable/_general_background"
+        android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/_general_header"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="0.5"
+                android:text="Amazigh Leaderboard"
+                android:textColor="#FFFFFF"
+                android:id="@+id/textViewScore"
+                android:textSize="30sp"
+                android:padding="3dp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:clipToPadding="false">
+
+                <Button
+                    android:id="@+id/nameOfThing"
+                    android:text=""
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:clickable="false"
+                    android:background="@drawable/_general_button_top"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="25dp"
+                    />
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tableLeaderboard"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp">
+                    <TableRow android:padding="5dp"
+                        android:background="@drawable/_general_button_center">
+                        <TextView
+                            android:id="@+id/newRankText"
+                            android:text="#"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_width="150dp"
+                            android:textSize="15sp"/>
+                        <TextView
+                            android:id="@+id/newNameText"
+                            android:text="naam"
+                            android:layout_weight="0.5"
+                            android:layout_width="150dp"
+                            android:textSize="15sp"/>
+                        <TextView
+                            android:id="@+id/newScoreText"
+                            android:layout_weight="0.4"
+                            android:text="score "
+                            android:layout_marginRight="15dp"
+                            android:layout_width="150dp"
+                            android:textSize="15sp"/>
+                    </TableRow>
+                </TableLayout>
+
+                <Button
+                    android:id="@+id/footer"
+                    android:text=""
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:clickable="false"
+                    android:background="@drawable/_general_button_bottom"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

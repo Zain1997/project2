@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" tools:context=".ScoreScreen"
+        android:background="@drawable/_general_background"
+        android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/_general_header"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="0.5"
+                android:text="Amazigh Score"
+                android:textColor="#FFFFFF"
+                android:id="@+id/textViewScore"
+                android:textSize="30sp"
+                android:padding="3dp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Score"
+                android:textColor="#000"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:id="@+id/headingScore"
+                android:layout_margin="5dp"
+                android:background="@drawable/_general_button_top"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text=""
+                android:textSize="30sp"
+                android:gravity="center"
+                android:textColor="#FFF"
+                android:id="@+id/textScore"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="24sp"
+                android:gravity="center"
+                android:textColor="#FFF"
+                android:id="@+id/textSaved"
+                android:visibility="gone"
+                android:layout_margin="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:text=""
+                android:textSize="18sp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#FFF"
+                android:id="@+id/textName"
+                android:layout_margin="5dp"/>
+
+            <Button
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:text="Save"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:id="@+id/buttonSave"
+            android:onClick="saveScore"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/_general_button_center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Unlocks"
+                android:textColor="#000"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:id="@+id/headingUnlocks"
+                android:layout_margin="5dp"
+                android:background="@drawable/_general_button_center"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="To unlock a new category you need at least 0 points in this category!"
+                android:textColor="#FFF"
+                android:id="@+id/textUnlocks"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text=""
+                android:gravity="center"
+                android:id="@+id/headingEnd"
+                android:layout_margin="5dp"
+                android:background="@drawable/_general_button_bottom"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
